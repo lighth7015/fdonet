@@ -1,0 +1,26 @@
+include $server/build.ninja
+include $backend/build.ninja
+include $instance/build.ninja
+include $utils/build.ninja
+
+build $outdir/main.o: cc $srcdir/main.c
+
+build $bindir/server: link $
+  $outdir/server.o $
+  $outdir/client1.o $
+  $outdir/client2.o $
+  $outdir/instance.o $
+  $outdir/init.o $
+  $outdir/Heartbeat.o $
+  $outdir/HandleData.o $
+  $outdir/HandleAuth.o $
+  $outdir/HandleAck.o $
+  $outdir/HandleSyncRes.o $
+  $outdir/HandleSyncReq.o $
+  $outdir/crc.o $
+  $outdir/list.o $
+  $outdir/read.o $
+  $outdir/event.o $
+  $outdir/hexdump.o $
+  $outdir/logging.o $
+  $outdir/main.o

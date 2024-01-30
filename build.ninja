@@ -1,0 +1,28 @@
+bindir = bin
+srcdir = src
+outdir = build
+
+backend = $srcdir/backend
+instance = $srcdir/server/instance
+server = $srcdir/server
+utils = $srcdir/utils
+clients = $server/clients
+
+libraries = $
+	-levent -pthread
+
+cflags = -Iinclude -DPRODUCTION -D_GNU_SOURCE
+
+pool link_pool
+  depth = 1
+
+rule cc
+  depfile = $out.d
+  command = clang -MMD -MF $out.d $cflags -c $in -o $out
+
+rule link
+  pool = link_pool
+  command = clang $libraries $in -o $out
+  description = $out
+
+include src/build.ninja

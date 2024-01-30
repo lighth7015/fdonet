@@ -1,0 +1,1 @@
+void hexdump(void *addr, char *desc, int len);

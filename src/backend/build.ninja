@@ -1,0 +1,3 @@
+build $outdir/crc.o: cc $backend/crc.c
+build $outdir/hexdump.o: cc $backend/hexdump.c
+build $outdir/logging.o: cc $backend/logging.c

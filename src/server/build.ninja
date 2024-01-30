@@ -1,0 +1,5 @@
+build $outdir/server.o: cc $server/server.c
+build $outdir/read.o: cc $server/read.c
+build $outdir/event.o: cc $server/event.c
+build $outdir/client1.o: cc $clients/client1.c
+build $outdir/client2.o: cc $clients/client2.c

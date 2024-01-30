@@ -1,0 +1,27 @@
+{
+	"files.exclude": {
+		"**/.dist": true,
+		"**/.vscode": true,
+		"**/build": true,
+		"**/bin": true
+	},
+	"C_Cpp.loggingLevel": "Debug",
+	"task.verboseLogging": true,
+	"C_Cpp.default.includePath": [
+		"${default}",
+		"/usr/include/**",
+		"${workspaceRoot}/include",
+		"${workspaceRoot}/src/**/include"
+	],
+	"c-cpp-compile-run.c-compiler": "/usr/bin/clang",
+	"c-cpp-compile-run.cpp-compiler": "/usr/bin/clang++",
+	"C_Cpp.default.compilerPath": "/usr/bin/clang",
+	"C_Cpp.errorSquiggles": "enabled",
+	"files.associations": {
+		"*.css": "css",
+		"client1.h": "c",
+		"server.h": "c",
+		"listener.h": "c",
+		"client.h": "c"
+	}
+}
