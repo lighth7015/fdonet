@@ -1,3 +1,4 @@
+# C2S methods
 build $outdir/init.o: cc $instance/ClientInit.c
 build $outdir/Heartbeat.o: cc $instance/Heartbeat.c
 build $outdir/HandleAuth.o: cc $instance/HandleAuth.c
@@ -6,3 +7,7 @@ build $outdir/HandleSyncReq.o: cc $instance/HandleSyncReq.c
 build $outdir/HandleData.o: cc $instance/HandleData.c
 build $outdir/HandleAck.o: cc $instance/HandleAck.c
 build $outdir/instance.o: cc $server/instance.c
+
+# Client version(s)
+build $outdir/client1.o: cc $clients/client1.c
+build $outdir/client2.o: cc $clients/client2.c

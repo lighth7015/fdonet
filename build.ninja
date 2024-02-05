@@ -11,7 +11,7 @@ clients = $server/clients
 libraries = $
 	-levent -pthread
 
-cflags = -Iinclude -DPRODUCTION -D_GNU_SOURCE
+cflags = -ggdb3 -Iinclude -DPRODUCTION -D_GNU_SOURCE
 
 pool link_pool
   depth = 1

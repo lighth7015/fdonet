@@ -9,16 +9,21 @@ typedef void (*ClientFreePayload)(void* data);
 typedef void (*BufferEventMethod)(struct bufferevent* buffer, short what, void* data);
 typedef void (*BufferParseMethod)(struct bufferevent* buffer, void* data);
 
-typedef struct client_vtable_t {
-	ClientReadPacket handle;
-	ClientFreePayload cleanup;
-} ClientVtableImpl, *CLIENT_VTABLE;
-
 typedef struct client_base_t {
 	evutil_socket_t fd;
+	struct evbuffer *buffer;
+	char source_addr[INET_ADDRSTRLEN];
+	P3PacketInitHeader header;
+	void *packet;
 
-	INSTANCE instance;
-	CLIENT_VTABLE vtable;
+	uint8_t 		rx : 7,
+					tx : 7;
+
+	INSTANCE		instance;
+	struct {
+		ClientReadPacket handle;
+		ClientFreePayload cleanup;
+	} vtable;
 } Client, *CLIENT;
 
 #include "server/instance.h"

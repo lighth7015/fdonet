@@ -6,13 +6,13 @@ void g_log_write_event(const char *fmt, const char* filename, const char* source
 	va_start(ap, line);
 	va_start(ap2, line);
 
-	int length = vsnprintf(NULL, 0, fmt, ap);
+	int length = vsnprintf(NULL, 0, fmt, ap) + 1;
 	va_end(ap);
 
 	char *buffer = calloc(length, sizeof(char));
 	vsnprintf(buffer, length, fmt, ap2);
 
-	printf("%s[%d] %-16s: %s\n", filename, line, source, buffer);
+	printf("%-32s | %-3d | %-20s | %s\n", filename, line, source, buffer);
 	free(buffer);
 }
 

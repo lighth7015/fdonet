@@ -1,4 +1,5 @@
 include $server/build.ninja
+include $server/p3/build.ninja
 include $backend/build.ninja
 include $instance/build.ninja
 include $utils/build.ninja
@@ -7,6 +8,9 @@ build $outdir/main.o: cc $srcdir/main.c
 
 build $bindir/server: link $
   $outdir/server.o $
+  $outdir/p3_packet.o $
+  $outdir/p3_reply.o $
+  $outdir/srvmain.o $
   $outdir/client1.o $
   $outdir/client2.o $
   $outdir/instance.o $

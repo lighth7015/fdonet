@@ -2,6 +2,7 @@
 #include <sys/stat.h>
 
 #include <stdlib.h>
+#include <stdarg.h>
 
 #include <string.h>
 #include <stdint.h>
@@ -15,7 +16,7 @@
 #define PACKED __attribute__ ((packed))
 
 #include "utils/list.h"
+#include "utils/segment.h"
 #include "logging.h"
 #include "hexdump.h"
-#include "packet.h"
 #include "crc.h"

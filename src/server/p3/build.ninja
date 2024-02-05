@@ -1,0 +1,5 @@
+build $outdir/p3_reply.o: cc $server/p3/reply.c
+build $outdir/p3_packet.o: cc $server/p3/packet.c
+
+# Implemented tokens
+build $outdir/p3_sd_token.o: cc $server/p3/tokens/sd.c

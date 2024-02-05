@@ -1,6 +1,5 @@
 #pragma once
 #include "backend.h"
-#include <stdarg.h>
 
 #ifndef NDEBUG
 void g_log_write_event(const char *fmt, const char* filename, const char* source, int line, ...);
