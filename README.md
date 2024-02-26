@@ -9,6 +9,9 @@ A from-scratch AOL 3.x/4.x-compatible P3 and FDO protocol server. Run your own p
 ## Features
 - Modular design, enabling the serving of several client versions at once
 
+## Library dependencies
+- libevent (Dispatch/server core)
+
 ## TODO
 - System Service Manager (e.g., systemd, FreeBSD rc.d, upstart)
 - AOL client 3.x compatibility
