@@ -11,6 +11,7 @@
 !.vscode/*.code-snippets
 
 # Binary build files
+bin/*
 build/**/*.o
 build/**/*.o.d
 .ninja_log
