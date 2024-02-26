@@ -41,11 +41,11 @@ Please adhere to this project's `code of conduct`.
 ## Roadmap
 
 - Design and implement client 3.x protocol
-  * Initial Connection State (ICS) Engine
+  * Initial Connection State (ICS) Handler
   * Protocol/Connection Handler for Client 3.x Protocol
 
 - Design and implement client 4.x protocol:
-  * Initial Connection State (ICS) Engine
+  * Initial Connection State (ICS) Handler
   * Protocol/Connection Handler for Client 4.x Protocol
 
 - Design and implement FDO rendering engine
