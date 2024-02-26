@@ -30,7 +30,7 @@ Please adhere to this project's `code of conduct`.
 ## Acknowledgements
  - [ReAOL- go support them!]()
 
-## Sources, fro which I'd never get around to writing this
+## Sources: If not for these, I'd never get around to writing this
  - [AOL-Files.com](https://mattmazur.com/category/aol-files/)
  - [Chfoo's "notaol" repository](https://github.com/chfoo/notaol)
  - [Archiveteam's AOL pages](https://wiki.archiveteam.org/index.php/AOL#Form_Definition_Operator_/_Form_Display_Operation_(FDO91_or_FDO))
