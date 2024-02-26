@@ -7,7 +7,7 @@ A from-scratch AOL 3.x/4.x-compatible P3 and FDO protocol server. Run your own p
 - [@lighth7015](https://www.github.com/lighth7015)
 
 ## Features
-- Modular server interface, enabling the serving of several client versions at once
+- Modular design, enabling the serving of several client versions at once
 
 ## TODO
 - System Service Manager (e.g., systemd, FreeBSD rc.d, upstart)
