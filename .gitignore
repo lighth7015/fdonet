@@ -12,6 +12,7 @@
 # Binary build files
 build/**/*.o
 build/**/*.o.d
+.ninja_log
 
 # Local History for Visual Studio Code
 .history/
